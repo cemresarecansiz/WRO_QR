@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">FoodCloud</string>s
     <string name="scan">Scan</string>
+    <string name="info">Get Info</string>
     <string name="title_activity_info_page">InfoPage</string>
     <!--
     This string is used for square devices and overridden by hello_world in
