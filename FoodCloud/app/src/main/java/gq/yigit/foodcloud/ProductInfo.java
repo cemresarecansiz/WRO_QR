@@ -133,8 +133,6 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                 BBD.setText("BBD : " +bbd);
                 Processed = (TextView) findViewById(R.id.Process);
                 Processed.setText("Process : " + processed);
-                Problematic = (TextView) findViewById(R.id.Problems);
-                Problematic.setText("Problemed : " + problematic);
 
             }
 
