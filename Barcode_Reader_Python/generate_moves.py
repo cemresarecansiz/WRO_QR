@@ -7,7 +7,7 @@ moved_item_loc = None
 exp_date = []
 shelf_new = []
 repeats = 0
-
+moves_return = None
 def backArray(myArray):
     global shelf_back
     shelf_back = []
@@ -27,6 +27,7 @@ def place():
     global shelf_new
     global repeats
     global shelf_back
+    global moves_return
     repeats += 1
     backArray(exp_date)
     moved_item = None
@@ -52,13 +53,16 @@ def place():
 
             print "        Moved item {0} to location {1}. Location {2} is now empty!".format(moved_item, empty_loc + 1,
                                                                                               moved_item_loc + 1)
-            print "============================================================================"
+            print "============================================================================="
+            moves_return.append(str(moved_item_loc + 1))
+            moves_return.append(str(empty_loc + 1))
         else:
             print "      Leaving item {0} in location {1}. Location {2} is still empty!".format(moved_item,
                                                                                                 moved_item_loc + 1,
                                                                                                 empty_loc + 1)
             print "============================================================================"
             correct_locs.append(moved_item_loc)
+
         place()
     else:
         return
@@ -68,6 +72,9 @@ def generate(dates,date_cur):
     global exp_date
     global shelf_new
     global repeats
+    global moves_return
+    shelf_new = []
+    moves_return = []
     exp_date = sort_date. calcDate(dates,date_cur)
     shelf_back = exp_date[:]
     try:
@@ -103,8 +110,8 @@ def generate(dates,date_cur):
                         print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n'
                         print "============================================================================"
                         exp_date[i] = None
-
-
+                        moves_return.append(str(i + 1))
+                        moves_return.append(str(len(exp_date)))
         else:
             break
         place()
@@ -113,6 +120,13 @@ def generate(dates,date_cur):
         print('***********************************************************************************')
         print('          The last {} items have expired, throwing them away.'.format(len(exp_date)-shelf_new.index(-1)-1))
         print('***********************************************************************************')
+        for i in range(len(shelf_new)-1,len(shelf_new)-shelf_new.index(-1),-1):
+            print "aaa"
+            moves_return.append(str(i))
+            moves_return.append("0")
+
     except ValueError:
         print("                              No items have expired")
         print('***********************************************************************************')
+
+    return moves_return

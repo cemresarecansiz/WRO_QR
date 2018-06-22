@@ -1,4 +1,3 @@
-# import the necessary packages
 from imutils.video import VideoStream
 from pyzbar import pyzbar
 import imutils
@@ -7,9 +6,26 @@ import cv2
 import database_actions
 import datetime
 import generate_moves
+import serial
 
-# initialize the video stream and allow the camera sensor to warm up
+arduino = serial.Serial('/dev/ttyACM0', 115200, timeout=.1)
+
+def move(locations):
+	reps = 0
+	for i in range(0,len(locations),2):
+		arduino.write(locations[i])
+		while(arduino.read() == '\x00'):
+			continue
+
+		arduino.write(locations[i+1])
+		while(arduino.read() == '\x00'):
+			continue
+
+
+
+
 print("[INFO] starting video stream...")
+
 def dateStr():
     date_cur = ""
     if len(str(datetime.date.today().day)) == 1:
@@ -22,7 +38,6 @@ def dateStr():
         date_cur = date_cur + str(datetime.date.today().month) + "."
     date_cur += str(datetime.date.today().year)
     return date_cur
-# vs = VideoStream(src=0).start()
 vs = VideoStream().start()
 time.sleep(2.0)
 dates = []
@@ -32,10 +47,8 @@ prevcode = None
 exp_date = []
 current_date =   dateStr()
 
-print current_date
-# loop over the frames from the video stream
 while reps<1:
-    # grab the frame from the threaded video stream and resize it to
+
     try:
         while (barcodes == None or barcodes == []):
             frame = vs.read()
@@ -61,6 +74,7 @@ while reps<1:
                 print("[INFO] Found {} barcode: {}".format(barcodeType, barcodeData))
                 dates.append(database_actions.getDate(barcodeData))
                 reps += 1
+                arduino.write("1")
 
             prevcode = barcodeData
             barcodes = None
@@ -69,10 +83,10 @@ while reps<1:
                 break
     except KeyboardInterrupt:
         break
-# close the output CSV file do a bit of cleanup
+
 print("[INFO] cleaning up...")
 print dates
-generate_moves.generate(dates,current_date)
+print generate_moves.generate(dates,current_date)
 
 cv2.destroyAllWindows()
 vs.stop()
