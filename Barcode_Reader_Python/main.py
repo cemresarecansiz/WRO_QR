@@ -3,7 +3,7 @@ from pyzbar import pyzbar
 import imutils
 import time
 import cv2
-import database_actions
+import database_read
 import datetime
 import generate_moves
 import serial
@@ -72,7 +72,7 @@ while reps<1:
                             0.5, (0, 0, 255), 2)
 
                 print("[INFO] Found {} barcode: {}".format(barcodeType, barcodeData))
-                dates.append(database_actions.getDate(barcodeData))
+                dates.append(database_read.getDate(barcodeData))
                 reps += 1
                 arduino.write("1")
 
