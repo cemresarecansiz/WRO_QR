@@ -85,8 +85,7 @@ while reps<1:
         break
 
 print("[INFO] cleaning up...")
-print dates
-print generate_moves.generate(dates,current_date)
-
+moves = generate_moves.generate(dates,current_date)
+#move(moves)
 cv2.destroyAllWindows()
 vs.stop()
