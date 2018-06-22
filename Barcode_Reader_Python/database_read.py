@@ -20,9 +20,3 @@ database_content = db.child("Products").get().val()
 def getDate(product):
   return str((database_content[int(product)]['BBD']))
 
-
-
-
-#db.child("Products").child("1").set(data_1_prod)
-#db.child("Products").child("2").set(data_2_prod)
-
