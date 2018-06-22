@@ -1,0 +1,52 @@
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+Barcode_Reader_Python/.idea/**/workspace.xml
+Barcode_Reader_Python/.idea/**/tasks.xml
+Barcode_Reader_Python/.idea/**/usage.statistics.xml
+Barcode_Reader_Python/.idea/**/dictionaries
+Barcode_Reader_Python/.idea/**/shelf
+
+# Sensitive or high-churn files
+Barcode_Reader_Python/.idea/**/dataSources/
+Barcode_Reader_Python/.idea/**/dataSources.ids
+Barcode_Reader_Python/.idea/**/dataSources.local.xml
+Barcode_Reader_Python/.idea/**/sqlDataSources.xml
+Barcode_Reader_Python/.idea/**/dynamic.xml
+Barcode_Reader_Python/.idea/**/uiDesigner.xml
+Barcode_Reader_Python/.idea/**/dbnavigator.xml
+
+# Gradle
+Barcode_Reader_Python/.idea/**/gradle.xml
+Barcode_Reader_Python/.idea/**/libraries
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+Barcode_Reader_Python/.idea/**/mongoSettings.xml
+
+# File-based project format
+Barcode_Reader_Python/*.iws
+
+# IntelliJ
+Barcode_Reader_Python/out/
+
+# mpeltonen/sbt-idea plugin
+Barcode_Reader_Python/.idea_modules/
+
+# JIRA plugin
+Barcode_Reader_Python/atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+Barcode_Reader_Python/.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+Barcode_Reader_Python/.idea/httpRequests
