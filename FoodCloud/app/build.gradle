@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "gq.yigit.foodcloud"
         minSdkVersion 24
@@ -19,6 +20,7 @@ android {
 }
 
 dependencies {
+    api 'com.google.http-client:google-http-client-android:1.22.0'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.google.firebase:firebase-database:16.0.1'
     implementation 'com.android.support:appcompat-v7:27.1.1'
@@ -30,5 +32,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     api 'com.google.firebase:firebase-core:16.0.0'
     compileOnly 'com.google.android.wearable:wearable:2.3.0'
+    implementation files('libs/GenAsync.jar')
 }
 apply plugin: 'com.google.gms.google-services'

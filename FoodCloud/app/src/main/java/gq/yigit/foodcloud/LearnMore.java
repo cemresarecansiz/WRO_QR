@@ -42,6 +42,7 @@ public class LearnMore extends AppCompatActivity implements View.OnClickListener
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             prod_loc_more = extras.getString("key");

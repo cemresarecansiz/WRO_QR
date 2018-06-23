@@ -1,19 +1,4 @@
-import pyrebase
-
-config = {
-	"apiKey": "AIzaSyD3bXRjLxEAVOKtj8hpjO4iI3Nn32F7agU",
-	"authDomain": "foodcloud-f6eb1.firebaseapp.com",
-	"databaseURL": "https://foodcloud-f6eb1.firebaseio.com/",
-	"storageBucket": "foodcloud-f6eb1.appspot.com"
-}
-
-firebase = pyrebase.initialize_app(config)
-
-auth = firebase.auth()
-
-user = auth.sign_in_with_email_and_password('yigitcolakohlu@gmail.com', 'FoodWro2018')
-
-db = firebase.database()
+import json
 
 data_format_prod = {
 	'Prod_Name': None, 'BBD': None, 'Nutrients': [], 'Calories': 0, 'Allergens': [],
@@ -76,7 +61,12 @@ Products = [data_1_prod, data_2_prod]
 Processes = [data_1_proc, data_2_proc]
 
 for i in range(len(Products)):
-	db.child("Products").child(str(i + 1)).set(Products[i])
+	with open('../database/content/Products/'+str(i+1) + '.json', 'w') as outfile:
+		json.dump(Products[i], outfile)
+		outfile.close()
+
 
 for i in range(len(Processes)):
-	db.child("Processes").child(str(i + 1)).set(Processes[i])
+	with open('../database/content/Processes/'+str(i+1) + '.json', 'w') as outfile:
+		json.dump(Processes[i], outfile)
+		outfile.close()

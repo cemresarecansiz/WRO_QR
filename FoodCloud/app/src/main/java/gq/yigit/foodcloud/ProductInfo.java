@@ -1,17 +1,24 @@
 package gq.yigit.foodcloud;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
+
+import com.google.api.client.json.JsonObjectParser;
 import com.google.firebase.database.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class ProductInfo extends AppCompatActivity implements OnClickListener {
     private static final String TAG = "MainActivity";
@@ -26,14 +33,15 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
     private String name;
     private String  cal;
     private String cooked;
-    private ArrayList nutrients;
+    private String nutrients;
+    private ArrayList nutrients_array;
     private String bbd;
     private String processed;
     private String problematic;
-    private ArrayList allergens;
-    public ArrayList Prods;
-    public Map<String, Object> someMap;
-    public HashMap<String, Object> Prod;
+    private String allergens;
+    private ArrayList allergens_array;
+    public String json_str;
+    public JSONObject Prod;
     private Button scanBtn;
     private Button jrnyBtn;
     public String prod_loc;
@@ -71,9 +79,8 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
         scanBtn.setOnClickListener(this);
         jrnyBtn = (Button)findViewById(R.id.journey);
         jrnyBtn.setOnClickListener(this);
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+
+
                 Bundle extras = getIntent().getExtras();
                 if (extras != null) {
                     prod_loc = extras.getString("key");
@@ -81,26 +88,20 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                 }
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                someMap = (Map<String, Object>) dataSnapshot.getValue();
-                ArrayList al1 = new ArrayList();
-                al1 = (ArrayList) someMap.get("Products");
-                al1.remove(0);
-                Prods = al1;
-                Prod = (HashMap<String, Object>)al1.get((Integer.parseInt(prod_loc))-1);
-                Log.d(TAG,"Value is : " + al1.get((Integer.parseInt(prod_loc))-1));
-                Log.d(TAG,Prod.get("Calories").getClass().toString());
-                name = Prod.get("Prod_Name").toString();
-                cal = Prod.get("Calories").toString();
-                cooked = Prod.get("Cooked").toString();
-                nutrients = (ArrayList)Prod.get("Nutrients");
-                bbd = Prod.get("BBD").toString();
-                processed = Prod.get("Process").toString();
-                allergens = (ArrayList)Prod.get("Allergens");
-                problematic = Prod.get("Problematic").toString();
+                PHPComm comm = new PHPComm(this);
+                comm.execute("get", "1", "Products");
+                try {
+                    json_str = PHPComm.return_json;
+                    Log.d(TAG,"get json str" + json_str);
+                    JSONObject jsonObj = new JSONObject(json_str);
+                }catch (JSONException e) {
+                    Log.d(TAG, "An error occured with the json!");
+                }
+                /*
                 Name = (TextView) findViewById(R.id.name);
-                Name.setText("Name : " + name);
+                Name.setText( name);
                 Cal = (TextView) findViewById(R.id.Calories);
-                Cal.setText("Calories : " + cal);
+                Cal.setText(cal);
                 Allergens = (TextView) findViewById(R.id.allergens);
                 allergens_print = "";
                 if(allergens.isEmpty()) {
@@ -127,22 +128,18 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                     }
                     Nutrients.setText("Nutrients : " + nutrients_print);
                 }
+
                 Cooked = (TextView) findViewById(R.id.cooked);
                 Cooked.setText("Cooked : " + cooked);
                 BBD = (TextView) findViewById(R.id.BBD);
-                BBD.setText("BBD : " +bbd);
+                BBD.setText(bbd);
                 Processed = (TextView) findViewById(R.id.Process);
                 Processed.setText("Process : " + processed);
-
+                */
             }
 
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.w(TAG, "Failed to read value.", error.toException());
-            }
 
-        });
+
 
 
 
@@ -152,4 +149,3 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
 
     }
 
-}

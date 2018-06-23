@@ -2,17 +2,21 @@ package gq.yigit.foodcloud;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements OnClickListener {
+import java.util.HashMap;
+
+
+public class MainActivity extends AppCompatActivity implements OnClickListener{
+    private static final String TAG = "MainActivity";
     int cnt = 0;
     private Button scanBtn;
     private Button infoBtn;
@@ -28,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         infoBtn = (Button)findViewById(R.id.info_button);
 
         infoBtn.setOnClickListener(this);
+
     }
 
     public void onClick(View v){
@@ -57,5 +62,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                     "No scan data received!", Toast.LENGTH_SHORT);
             toast.show();
         }
+
     }
 }
