@@ -84,17 +84,23 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                 Bundle extras = getIntent().getExtras();
                 if (extras != null) {
                     prod_loc = extras.getString("key");
-                    //The key argument here must match that used in the other activity
+                    //The key argument here must match that used in the other activitylgo
                 }
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 PHPComm comm = new PHPComm(this);
                 comm.execute("get", "1", "Products");
                 try {
-                    json_str = PHPComm.return_json;
-                    Log.d(TAG,"get json str" + json_str);
-                    JSONObject jsonObj = new JSONObject(json_str);
-                }catch (JSONException e) {
+                    json_str = comm.json_return;
+                    while(json_str == null){
+                       json_str = comm.json_return;
+                       continue;
+                    }
+
+                    Log.d(TAG,"This is a pointer");
+                    //Log.d(TAG,"get json str" + json_str);
+                    //JSONObject jsonObj = new JSONObject(json_str);
+                }catch (NullPointerException e) {
                     Log.d(TAG, "An error occured with the json!");
                 }
                 /*

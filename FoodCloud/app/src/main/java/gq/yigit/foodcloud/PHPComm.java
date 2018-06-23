@@ -18,9 +18,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-/**
- * Created by ProgrammingKnowledge on 1/5/2016.
- */
 public class PHPComm extends AsyncTask<String,Void,String> {
     private static final String TAG = "MainActivity";
     Context context;
@@ -28,13 +25,14 @@ public class PHPComm extends AsyncTask<String,Void,String> {
     PHPComm (Context ctx) {
         context = ctx;
     }
-    static public String return_json;
+    static String json_return;
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
         String login_url = "http://192.168.1.21/database/communication/comm.php";
         if(type.equals("get")) {
             try {
+                Log.d(TAG,"received get");
                 String id = params[1];
                 String value = params[2];
                 URL url = new URL(login_url);
@@ -79,15 +77,13 @@ public class PHPComm extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String result) {
         alertDialog.setMessage(result);
-        Log.d(TAG, "AlertBoxSet" + result);
-        setJson(result);
+        Log.d(TAG, "AlertBoxSet " + result);
+        json_return = result;
+        alertDialog.show();
     }
 
     @Override
     protected void onProgressUpdate(Void... values) {
         super.onProgressUpdate(values);
-    }
-    static private void setJson(String json){
-        return_json = json;
     }
 }
