@@ -1,1 +1,1 @@
-"{\"Allergens\": [\"Lactose\"], \"Cooked\": false, \"Problematic\": false, \"Process\": \"Pastorized\", \"Nutrients\": [\"Protein\", \"Fat\", \"Lactose\", \"Glucose\"], \"BBD\": \"24.08.2018\", \"Calories\": 120, \"Prod_Name\": \"Milk\"}"
+{"Allergens": ["Lactose"], "Cooked": false, "Problematic": false, "Process": "Pastorized", "Nutrients": ["Protein", "Fat", "Lactose", "Glucose"], "BBD": "24.08.2018", "Calories": 120, "Prod_Name": "Milk"}

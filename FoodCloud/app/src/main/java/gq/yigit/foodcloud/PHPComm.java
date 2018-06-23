@@ -78,8 +78,9 @@ public class PHPComm extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         alertDialog.setMessage(result);
         Log.d(TAG, "AlertBoxSet " + result);
-        json_return = result;
         alertDialog.show();
+        ProductInfo flow = new ProductInfo();
+        flow.continueApp(result);
     }
 
     @Override

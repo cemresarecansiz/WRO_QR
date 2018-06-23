@@ -90,18 +90,18 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                 // whenever data at this location is updated.
                 PHPComm comm = new PHPComm(this);
                 comm.execute("get", "1", "Products");
-                try {
-                    json_str = comm.json_return;
-                    while(json_str == null){
-                       json_str = comm.json_return;
-                       continue;
-                    }
 
+            }
+
+            public void continueApp(String json_str){
+                try {
                     Log.d(TAG,"This is a pointer");
-                    //Log.d(TAG,"get json str" + json_str);
-                    //JSONObject jsonObj = new JSONObject(json_str);
-                }catch (NullPointerException e) {
+                    Log.d(TAG,"get json str" + json_str);
+                    JSONObject jsonObj = new JSONObject(json_str);
+                }catch (JSONException e) {
                     Log.d(TAG, "An error occured with the json!");
+                }catch (NullPointerException e){
+                    Log.d(TAG,"Received null data!");
                 }
                 /*
                 Name = (TextView) findViewById(R.id.name);
@@ -143,8 +143,6 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                 Processed.setText("Process : " + processed);
                 */
             }
-
-
 
 
 
