@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5ef56c-2d3e-44d9-be69-b414f166f99b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoodCloud/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/PHPcomm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database_append.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_append.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_read.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/GetInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/GetInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/LearnMore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/LearnMore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/PHPComm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/PHPComm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_product_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_product_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_learn_more.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_learn_more.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,16 +26,39 @@
     <SUITE FILE_PATH="coverage/Barcode_Reader_Python$sort_date.coverage" NAME="sort_date Coverage Results" MODIFIED="1529590504238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Barcode_Reader_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1529672838644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Barcode_Reader_Python$Unnamed.coverage" NAME="raspberry_live Coverage Results" MODIFIED="1529543452123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Barcode_Reader_Python$database_actions.coverage" NAME="database_actions Coverage Results" MODIFIED="1529692830827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Barcode_Reader_Python$database_append.coverage" NAME="database_append Coverage Results" MODIFIED="1529768832056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Barcode_Reader_Python$database_append.coverage" NAME="database_append Coverage Results" MODIFIED="1529835022690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Barcode_Reader_Python$database_actions.coverage" NAME="database_actions Coverage Results" MODIFIED="1529835364313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="database_append.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database_append.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="database_read.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database_read.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="51" column="70" lean-forward="true" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+            <state relative-caret-position="51">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate_moves.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate_moves.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-600">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sort_date.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sort_date.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="47" lean-forward="true" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -84,9 +101,9 @@
         <option value="$PROJECT_DIR$/move.py" />
         <option value="$PROJECT_DIR$/database_actions.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/database_read.py" />
         <option value="$PROJECT_DIR$/Barcode_Reader_Python/database_append.py" />
         <option value="$PROJECT_DIR$/database_append.py" />
+        <option value="$PROJECT_DIR$/database_read.py" />
       </list>
     </option>
   </component>
@@ -126,12 +143,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="keymap&#9;ACTION&#9;ChangeKeymap" />
+    <property name="SearchEverywhereHistoryKey" value="plugin&#9;null&#9;null&#10;keymap&#9;ACTION&#9;ChangeKeymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -145,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.database_append">
+  <component name="RunManager" selected="Python.database_actions">
     <configuration name="RUN" type="PythonConfigurationType" factoryName="Python">
       <module name="Barcode_Reader_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,9 +307,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.database_actions" />
         <item itemvalue="Python.database_append" />
         <item itemvalue="Python.pydevd" />
-        <item itemvalue="Python.database_actions" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.move" />
       </list>
@@ -336,7 +353,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924126" weight="0.28426966" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19925214" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2056624" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32928678" />
@@ -356,24 +373,24 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962063" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26783004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924126" visible="true" weight="0.27056962" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39873418" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007587" side_tool="true" weight="0.4638365" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32928678" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +411,41 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/database_append.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_append.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_append.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="70" lean-forward="true" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16275">
@@ -459,7 +511,6 @@
     <entry file="file://$PROJECT_DIR$/barcodes.csv" />
     <entry file="file://$PROJECT_DIR$/raspberry_zbar.py" />
     <entry file="file://$PROJECT_DIR$/zbar_live.py" />
-    <entry file="file://$PROJECT_DIR$/sort_date.py" />
     <entry file="file:///usr/lib/python2.7/dist-packages/serial/serialposix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -475,14 +526,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generate_moves.py" />
-    <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/database_read.py" />
     <entry file="file://$PROJECT_DIR$/Barcode_Reader_Python/database_append.py" />
+    <entry file="file:///usr/lib/python2.7/dist-packages/pluggy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="632" column="47" selection-start-line="632" selection-start-column="47" selection-end-line="632" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database_append.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="51" column="70" lean-forward="true" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_moves.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort_date.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="47" lean-forward="true" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>

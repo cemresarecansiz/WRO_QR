@@ -20,6 +20,7 @@ import java.net.URLEncoder;
 
 public class PHPComm extends AsyncTask<String,Void,String> {
     private static final String TAG = "MainActivity";
+    public static  String decide;
     Context context;
     AlertDialog alertDialog;
     PHPComm (Context ctx) {
@@ -29,7 +30,7 @@ public class PHPComm extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String login_url = "http://192.168.1.21/database/communication/comm.php";
+        String login_url = "http://192.168.43.125/database/communication/comm.php";
         if(type.equals("get")) {
             try {
                 Log.d(TAG,"received get");
@@ -61,8 +62,10 @@ public class PHPComm extends AsyncTask<String,Void,String> {
                 return result;
             } catch (MalformedURLException e) {
                 e.printStackTrace();
+                Log.d(TAG,"MalformedURL");
             } catch (IOException e) {
                 e.printStackTrace();
+                Log.d(TAG,"IOExcept");
             }
         }
         return null;
@@ -78,7 +81,11 @@ public class PHPComm extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         alertDialog.setMessage(result);
         Log.d(TAG, "AlertBoxSet " + result);
-        ProductInfo.continueApp(result);
+        Log.d(TAG,decide);
+        if(decide == "Prod") {
+            ProductInfo.continueApp(result);
+        }
+
     }
 
     @Override

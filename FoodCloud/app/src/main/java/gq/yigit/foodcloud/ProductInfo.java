@@ -14,22 +14,13 @@ END PRAYER
 package gq.yigit.foodcloud;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
-
-import com.google.api.client.json.JsonObjectParser;
-import com.google.firebase.database.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.ArrayList;
 import android.view.View.OnClickListener;
-import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -78,12 +69,14 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
         Cooked = (TextView) findViewById(R.id.cooked);
         BBD = (TextView) findViewById(R.id.BBD);
         Processed = (TextView) findViewById(R.id.Process);
+        Nutrients = (TextView) findViewById(R.id.nutrients);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             prod_loc = extras.getString("key");
         }
 
         PHPComm comm = new PHPComm(this);
+        PHPComm.decide = "Prod";
         comm.execute("get", prod_loc, "Products");
 
 
@@ -123,6 +116,9 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                     Log.d(TAG,"Received null data!");
                 }
                 Log.d(TAG,allergens);
+                if(processed.length() < 4){
+                    Processed.setText("None");
+                }
                 if(allergens.length() < 7) {
                     Allergens.setText("None");
                 }else{
@@ -138,28 +134,32 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                     }
                     Allergens.setText(allergens_print);
                 }
-                /*
-                Nutrients = (TextView) findViewById(R.id.nutrients);
+                
+                
                 nutrients_print = "";
-                if(nutrients.isEmpty()) {
-                    Nutrients.setText("Nutrients : None");
+                if(nutrients.length() < 7) {
+                    Nutrients.setText("None");
                 }else{
-                    for(int i = 0; i < nutrients.size();i++) {
-                        nutrients_print = nutrients_print + nutrients.get(i);
-                        if(i != nutrients.size() -1){
+                    for(int i = 0; i < nutrients_array.length();i++) {
+                        try {
+                            nutrients_print = nutrients_print + nutrients_array.get(i);
+                        }catch (JSONException e){
+                            Log.d(TAG,"An error occured with json");
+                        }
+                        if(i != nutrients_array.length()-1){
                             nutrients_print = nutrients_print + " , ";
                         }
                     }
-                    Nutrients.setText("Nutrients : " + nutrients_print);
+                    Nutrients.setText(nutrients_print);
                 }
-*/
+
 
                 try {
                     Cal.setText(cal);
                     allergens_print = "";
-                    Cooked.setText("Cooked : " + cooked);
+                    Cooked.setText(cooked);
                     BBD.setText(bbd);
-                    Processed.setText("Process : " + processed);
+                    Processed.setText(processed);
                     Name.setText(name);
 
                 }catch(NullPointerException e){

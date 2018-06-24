@@ -9,10 +9,15 @@
 
 $id = $_POST["id"];
 $value = $_POST["value"];
+$content = $_POST["content"];
 $file_loc =  "../content/" .  $value . "/" . $id . ".json";
 $myfile = fopen($file_loc, "r") or die("Unable to open file!");
-$content = fread($myfile,filesize($file_loc));
-echo $content;
+$send = fread($myfile,filesize($file_loc));
+if(isset($_POST["content"])){
+    $send = json_decode($send,true);
+    $send = $send[$content];
+}
+echo $send;
 
 ?>
 
