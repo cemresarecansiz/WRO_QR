@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        System.gc();
         scanBtn = (Button)findViewById(R.id.scan_button);
 
         scanBtn.setOnClickListener(this);
@@ -51,13 +51,18 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-        if (scanningResult != null) {
-            String scanContent = scanningResult.getContents();
+        String scanContent = scanningResult.getContents();
+        try{
+            scanContent.toString();
             Intent i = new Intent(MainActivity.this, ProductInfo.class);
             i.putExtra("key",scanContent);
             startActivity(i);
         }
-        else{
+        catch(NullPointerException e) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "No scan data received!", Toast.LENGTH_SHORT);
+            toast.show();
+        }catch(RuntimeException e){
             Toast toast = Toast.makeText(getApplicationContext(),
                     "No scan data received!", Toast.LENGTH_SHORT);
             toast.show();

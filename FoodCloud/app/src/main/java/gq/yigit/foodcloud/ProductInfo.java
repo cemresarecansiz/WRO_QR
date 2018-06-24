@@ -70,7 +70,8 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
         BBD = (TextView) findViewById(R.id.BBD);
         Processed = (TextView) findViewById(R.id.Process);
         Nutrients = (TextView) findViewById(R.id.nutrients);
-        Bundle extras = getIntent().getExtras();
+        Bundle extras =
+                getIntent().getExtras();
         if (extras != null) {
             prod_loc = extras.getString("key");
         }
@@ -88,6 +89,17 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
             Intent i = new Intent(ProductInfo.this, MainActivity.class);
             startActivity(i);
         }if (v.getId() == R.id.journey) {
+            allergens_array =  null;
+            nutrients_array =  null;
+            //expiry_date =  null;
+            nutrients =  null;
+            allergens =  null;
+            processed = null;
+            name =  null;
+            cooked = null;
+            cal = null;
+            bbd = null;
+            System.gc();
             Intent i = new Intent(ProductInfo.this, LearnMore.class);
             i.putExtra("key", prod_loc);
             startActivity(i);
@@ -115,7 +127,6 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                 }catch (NullPointerException e){
                     Log.d(TAG,"Received null data!");
                 }
-                Log.d(TAG,allergens);
                 if(processed.length() < 4){
                     Processed.setText("None");
                 }
@@ -143,7 +154,7 @@ public class ProductInfo extends AppCompatActivity implements OnClickListener {
                     for(int i = 0; i < nutrients_array.length();i++) {
                         try {
                             nutrients_print = nutrients_print + nutrients_array.get(i);
-                        }catch (JSONException e){
+                        }catch (JSONException  e){
                             Log.d(TAG,"An error occured with json");
                         }
                         if(i != nutrients_array.length()-1){
