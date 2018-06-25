@@ -226,7 +226,7 @@
         android:shadowRadius="5"
         android:text="@string/back"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView16"
         app:layout_constraintEnd_toEndOf="@+id/trans2"
         app:layout_constraintHorizontal_bias="1.0"

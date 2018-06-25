@@ -1,3 +1,15 @@
+/*
+PAUSE FOR PRAYER
+
+Dear God,
+Please help me find any malicious bugs that I've created
+and ,yet, I can't spot.
+Make my code free of errors.
+
+
+END PRAYER
+*/
+
 package gq.yigit.foodcloud;
 
 import android.support.v7.app.AppCompatActivity;

@@ -30,7 +30,7 @@ public class PHPComm extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String login_url = "http://192.168.1.21/database/communication/comm.php";
+        String login_url = "http://192.168.43.125/database/communication/comm.php";
         if(type.equals("get")) {
             try {
                 Log.d(TAG,"received get");

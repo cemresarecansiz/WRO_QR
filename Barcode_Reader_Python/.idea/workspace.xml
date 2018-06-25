@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b5ef56c-2d3e-44d9-be69-b414f166f99b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/database_append.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_append.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/LearnMore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/LearnMore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/PHPComm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/PHPComm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/java/gq/yigit/foodcloud/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_learn_more.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_learn_more.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_product_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FoodCloud/app/src/main/res/layout/activity_product_info.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7b5ef56c-2d3e-44d9-be69-b414f166f99b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +58,8 @@
       <file leaf-file-name="database_append.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database_append.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="61" column="107" selection-start-line="61" selection-start-column="107" selection-end-line="61" selection-end-column="107" />
+            <state relative-caret-position="485">
+              <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -136,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,7 +141,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,7 +354,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924126" weight="0.28426966" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20779915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2099359" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32928678" />
@@ -381,24 +374,24 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962063" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26783004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924126" visible="true" weight="0.27056962" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39873418" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007587" side_tool="true" weight="0.4638365" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32928678" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,8 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database_append.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="61" column="107" selection-start-line="61" selection-start-column="107" selection-end-line="61" selection-end-column="107" />
+        <state relative-caret-position="485">
+          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,15 @@
+/*
+PAUSE FOR PRAYER
+
+Dear God,
+Please help me find any malicious bugs that I've created
+and ,yet, I can't spot.
+Make my code free of errors.
+
+
+END PRAYER
+*/
+
 package gq.yigit.foodcloud;
 
 import android.content.Intent;
@@ -68,9 +80,25 @@ public class LearnMore extends AppCompatActivity implements View.OnClickListener
     }
 
     public void onClick(View v){
-        if(v.getId() == R.id.go_back_to_main){
-            Intent i = new Intent(LearnMore.this, MainActivity.class);
-            startActivity(i);
+        try {
+            if (v.getId() == R.id.go_back_to_main) {
+                Intent i = new Intent(LearnMore.this, MainActivity.class);
+                startActivity(i);
+            } else if (v.getId() == R.id.factory) {
+                Intent i = new Intent(LearnMore.this, ProcessPop.class);
+                i.putExtra("key", process.get("Process").toString());
+                startActivity(i);
+            } else if (v.getId() == R.id.farm) {
+                Intent i = new Intent(LearnMore.this, FarmPop.class);
+                i.putExtra("key", process.get("Harvested").toString());
+                startActivity(i);
+            } else if (v.getId() == R.id.packaging) {
+                Intent i = new Intent(LearnMore.this, PackagePop.class);
+                i.putExtra("key", process.get("Packaging").toString());
+                startActivity(i);
+            }
+        }catch(JSONException e){
+            Log.d(TAG,"An error occured with json");
         }
     }
     static public void adjustImg(ImageView comp,String stage) {
