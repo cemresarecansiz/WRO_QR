@@ -36,7 +36,7 @@
         <activity
             android:name=".PackagePop"
             android:theme="@style/AppTheme.Popup" />
-        <activity android:name=".PopTrans1"></activity>
+        <activity android:name=".PopTrans1" android:theme="@style/AppTheme.Popup"/>
     </application>
 
 </manifest>
