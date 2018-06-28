@@ -27,7 +27,7 @@ data_4_prod = {
 	'Prod_Name': "Delitos", 'BBD': "12.12.2018", 'Nutrients': ['Protein', 'Carbohydrate', 'Fibre', 'Soduium', 'Fat', 'Salt'], 'Calories': 161, 'Cooked': True 'Allergens': ['Lactose','Gluten', 'Nuts'], 'Problematic': False, 'Process': 'Fried', 'ED': "12.02.2019"
 }
 data_5_prod = {
-	'Prod_Name': "Delitos", 'BBD': "12.05.2017", 'Nutrients': ['Protein', 'Carbohydrate', 'Fibre', 'Soduium', 'Fat', 'Salt'], 'Calories': 167, 'Cooked': True 'Allergens': ['Lactose','Gluten', 'Nuts'], 'Problematic': True, 'Process':'Fried', 'ED': "12.06.2017"
+	'Prod_Name': "Delitos", 'BBD': "12.05.2018", 'Nutrients': ['Protein', 'Carbohydrate', 'Fibre', 'Soduium', 'Fat', 'Salt'], 'Calories': 167, 'Cooked': True 'Allergens': ['Lactose','Gluten', 'Nuts'], 'Problematic': True, 'Process':'Fried', 'ED': "12.06.2018"
 }
 
 data_6_prod = {
@@ -104,36 +104,36 @@ data_1_proc = {
 	'Harvested': {'Date': '06.05.2018', 'Location': 'India', 'Product': 'Potatoe','Problematic':False},
 	'Transport1': {'Duration': 19, 'Moved to,from': 'India-Gee Tee Industries', 'Condition': True, 'Stopped': True,'Problematic':False},
 	'Process': {'Location': 'Gee Tee Industries', 'Processes': 'Peeling, Slicing, Frying','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': 'Gee Tee Industries-Gee Tee Industries', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Gee Tee Industries-Gee Tee Industries', 'Condition': True, 'Stopped': False,'Problematic':False},
 	'Packaging': {'Location': 'Gee Tee Industries', 'Material': 'Polypropylene', 'Cancerogen': False,'Problematic': False}
 }
 data_2_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '14.08.2017', 'Location': 'China', 'Product': 'Potatoe','Problematic':False},
+	'Transport1': {'Duration': 24, 'Moved to,from': 'China-Gee Tee Industries', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Gee Tee Industries', 'Processes': 'Peeling, Slicing, Frying','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Gee Tee Industries-Gee Tee Industries', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Gee Tee Industries', 'Material': 'Polypropylene', 'Cancerogen': True,'Problematic':True}
 }
 data_3_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '15.06.2018', 'Location': 'India', 'Product': 'Potatoe','Problematic':False},
+	'Transport1': {'Duration': 25, 'Moved to,from': 'India-Gee Tee Industries', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Gee Tee Industries', 'Processes': 'Peeling, Slicing, Frying','Problematic':False},
+	'Transport2': {'Duration': 2, 'Moved to,from': 'Gee Tee Industries-Gee Tee Industries', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Gee Tee Industries', 'Material': 'Polypropylene', 'Cancerogen':False,'Problematic':False}
 }
 data_4_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '19.06.2017', 'Location': 'Turkey', 'Product': 'Potatoe','Problematic':False},
+	'Transport1': {'Duration': 19, 'Moved to,from': 'Turkey-Gee Tee Industries', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Gee Tee Industries', 'Processes': 'Peeling, Slicing, Frying','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Gee Tee Industries-Gee Tee Industries', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Gee Tee Industries', 'Material': 'Polypropylene', 'Cancerogen': False,'Problematic':False}
 }
 data_5_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '27.07.2017', 'Location': 'Turkey', 'Product': 'Potatoe','Problematic':False},
+	'Transport1': {'Duration': 16, 'Moved to,from': 'Turkey-Gee Tee Industries', 'Condition': False, 'Stopped': True,'Problematic': True},
+	'Process': {'Location': 'Gee Tee Industries', 'Processes': 'Peeling, Slicing, Frying','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Gee Tee Industries-Gee Tee Industries', 'Condition':True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Gee Tee Industries', 'Material': 'Polypropylene', 'Cancerogen': False,'Problematic':False}
 }
 data_6_proc = {
 	'Harvested': {'Date': '14.05.2017', 'Location': 'Turkey', 'Product': 'Wheat','Problematic':False},
@@ -143,67 +143,67 @@ data_6_proc = {
 	'Packaging': {'Location': 'Greif Packaging Spain SA', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
 }
 data_7_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '15.05.2018', 'Location': 'China', 'Product': 'Wheat','Problematic':False},
+	'Transport1': {'Duration': 21, 'Moved to,from': 'China-Galletas Gullon SA', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Galletas Gullon SA', 'Processes': 'Kneading, Moulding, Baking, Cooling','Problematic':True},
+	'Transport2': {'Duration': 0, 'Moved to,from': 'Galletas Gullon SA-Galletas Gullon SA', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Galletas Gullon SA', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
 }
 data_8_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '17.04.2018', 'Location': 'Russia', 'Product': 'Wheat','Problematic':False},
+	'Transport1': {'Duration': 24, 'Moved to,from': 'Russia-Galletas Gullon SA', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Galletas Gullon SA', 'Processes': 'Kneading, Moulding, Baking, Cooling','Problematic':False},
+	'Transport2': {'Duration': 6, 'Moved to,from': 'Galletas Gullon SA-Greif Packaging Spain SA', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Greif Packaging Spain SA', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
 }
 data_9_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '12.03.2018', 'Location': 'India', 'Product': 'Wheat','Problematic':False},
+	'Transport1': {'Duration': 26, 'Moved to,from': 'India-Galletas Gullon SA', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Galletas Gullon SA', 'Processes': 'Kneading, Moulding, Baking, Cooling','Problematic':False},
+	'Transport2': {'Duration': 8, 'Moved to,from': 'Galletas Gullon SA-Greif Packaging Spain SA', 'Condition': False, 'Stopped': False,'Problematic':True},
+	'Packaging': {'Location': 'Greif Packaging Spain SA', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
 }
 data_10_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '14.06.2018', 'Location': 'Ukraine', 'Product': 'Wheat','Problematic':False},
+	'Transport1': {'Duration': 14, 'Moved to,from': 'Ukraine-Galletas Gullon SA', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Galletas Gullon SA', 'Processes': 'Kneading, Moulding, Baking, Cooling','Problematic':False},
+	'Transport2': {'Duration': 9, 'Moved to,from': 'Galletas Gullon SA-Greif Packaging Spain SA', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Packaging': {'Location': 'Greif Packaging Spain SA', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
 }
 data_11_proc = {
 	'Harvested': {'Date': '15.06.2017', 'Location': 'Russia', 'Product': 'Wheat','Problematic':False},
 	'Transport1': {'Duration': 29, 'Moved to,from': 'Russia-Barilla', 'Condition': True, 'Stopped': True,'Problematic':False},
 	'Process': {'Location': 'Barilla', 'Processes': 'Pressing, Moulding, Klining, Ensiling ','Problematic':False},
 	'Transport2': {'Duration': 1, 'Moved to,from': 'Barilla-Barilla', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': 'Barilla', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
+	'Packaging': {'Location': 'Barilla', 'Material': 'Carton', 'Cancerogen': True,'Problematic':True}
 }
 data_12_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '12.08.2018', 'Location': 'India', 'Product': 'Wheat','Problematic':False},
+	'Transport1': {'Duration': 25, 'Moved to,from': 'India-Barilla', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Barilla', 'Processes': 'Pressing, Moulding, Klining, Ensiling','Problematic':True},
+	'Transport2': {'Duration': 0.5, 'Moved to,from': 'Barilla-Barilla', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Barilla', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
 }
 data_13_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '23.03.2018', 'Location': 'Turkey', 'Product': 'Wheat','Problematic':True},
+	'Transport1': {'Duration': 24, 'Moved to,from': 'Turkey-Barilla', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Barilla', 'Processes': 'Pressing, Moulding, Klining, Ensiling','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Barilla-Barilla', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Barilla', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
 }
 data_14_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '24.06.2018', 'Location': 'Russia', 'Product': 'Wheat','Problematic':False},
+	'Transport1': {'Duration': 31, 'Moved to,from': 'Russia-Barilla', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Barilla', 'Processes': 'Pressing, Moulding, Klining, Ensiling','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Barilla-Barilla', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Barilla', 'Material': 'Carton', 'Cancerogen': False,'Problematic':False}
 }
 data_15_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '12.07.2018', 'Location': 'Russia', 'Product': 'Wheat','Problematic':False},
+	'Transport1': {'Duration': 23, 'Moved to,from': 'Russia-Barilla', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'Barilla', 'Processes': 'Pressing, Moulding, Klining, Ensiling','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Barilla-Barilla', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Barilla', 'Material': 'Carton', 'Cancerogen': False,'Problematic':True}
 }
 data_16_proc = {
 	'Harvested': {'Date': '16.08.2017', 'Location': 'USA', 'Product': 'Corn','Problematic':False},
@@ -213,32 +213,32 @@ data_16_proc = {
 	'Packaging': {'Location': 'Starpak Packaging Company', 'Material': 'Recyclable Plastic', 'Cancerogen': False,'Problematic':False}
 }
 data_17_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '20.06.2018', 'Location': 'USA', 'Product': 'Corn','Problematic':False},
+	'Transport1': {'Duration': 29, 'Moved to,from': 'USA-EGE Gluten Free Food Product Company', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'EGE Gluten Free Food Product Company', 'Processes': 'Cleaning, Maceration, Core Scalping, Bran Scalping, Protein Scalping, Starch Purification','Problematic':False},
+	'Transport2': {'Duration': 0, 'Moved to,from': 'EGE Gluten Free Food Product Company-EGE Gluten Free Food Product Company', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'EGE Gluten Free Food Product Company', 'Material': 'Recyclable Plastic', 'Cancerogen': False,'Problematic':False}
 }
 data_18_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '16.06.2018', 'Location': 'India', 'Product': 'Corn','Problematic':False},
+	'Transport1': {'Duration': 21, 'Moved to,from': 'India-EGE Gluten Free Food Product Company', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'EGE Gluten Free Food Product Company', 'Processes': 'Cleaning, Maceration, Core Scalping, Bran Scalping, Protein Scalping, Starch Purification','Problematic':False},
+	'Transport2': {'Duration': 0, 'Moved to,from': 'EGE Gluten Free Food Product Company-EGE Gluten Free Food Product Company', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'EGE Gluten Free Food Product Company', 'Material': 'Recyclable Plastic', 'Cancerogen': False,'Problematic':False}
 }
 data_19_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '14.06.2018', 'Location': 'Turkey', 'Product': 'Corn','Problematic':True},
+	'Transport1': {'Duration': 4, 'Moved to,from': 'Turkey-EGE Gluten Free Food Product Company', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Process': {'Location': 'EGE Gluten Free Food Product Company', 'Processes': 'Cleaning, Maceration, Core Scalping, Bran Scalping, Protein Scalping, Starch Purification','Problematic':False},
+	'Transport2': {'Duration': 2, 'Moved to,from': 'EGE Gluten Free Food Product Company-Starpak Packaging Company', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Starpak Packaging Company', 'Material': 'Recyclable Plastic', 'Cancerogen': False,'Problematic':False}
 }
 data_20_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '01.06.2018', 'Location': 'Turkey', 'Product': 'Corn','Problematic':False},
+	'Transport1': {'Duration': 8, 'Moved to,from': 'Turkey-EGE Gluten Free Food Product Company', 'Condition': True, 'Stopped': True,'Problematic':False},
+	'Process': {'Location': 'EGE Gluten Free Food Product Company', 'Processes': 'Cleaning, Maceration, Core Scalping, Bran Scalping, Protein Scalping, Starch Purification','Problematic':False},
+	'Transport2': {'Duration': 0, 'Moved to,from': 'EGE Gluten Free Food Product Company-EGE Gluten Free Food Product Company', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'EGE Gluten Free Food Product Company', 'Material': 'Non-recyclable Plastic', 'Cancerogen': True,'Problematic':True}
 }
 data_21_proc = {
 	'Harvested': {'Date': '02.04.2018', 'Location': 'Kenya', 'Product': 'Peanuts','Problematic':False},
@@ -248,32 +248,32 @@ data_21_proc = {
 	'Packaging': {'Location': 'Deepa Industries LTD', 'Material': 'Plastic', 'Cancerogen': False,'Problematic':False}
 }
 data_22_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '18.06.2018', 'Location': 'Kenya', 'Product': 'Peanuts','Problematic':False},
+	'Transport1': {'Duration': 7, 'Moved to,from': 'Kenya-Deepa Industries LTD', 'Condition': False, 'Stopped': False,'Problematic':True},
+	'Process': {'Location': 'Deepa Industries LTD', 'Processes': 'Peeling, Roasting, Salting','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Deepa Industries LTD-Deepa Industries LTD', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Deepa Industries LTD', 'Material': 'Plastic', 'Cancerogen': True,'Problematic':True}
 }
 data_23_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '19.08.2018', 'Location': 'Kenya', 'Product': 'Peanuts','Problematic':False},
+	'Transport1': {'Duration': 9, 'Moved to,from': 'Kenya-Deepa Industries LTD', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Process': {'Location': 'Deepa Industries LTD', 'Processes': 'Peeling, Roasting, Salting','Problematic':True},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Deepa Industries LTD-Deepa Industries LTD', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Deepa Industries LTD', 'Material': 'Plastic', 'Cancerogen': False,'Problematic':False}
 }
 data_24_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '12.09.2017', 'Location': 'China', 'Product': 'Peanuts','Problematic':False},
+	'Transport1': {'Duration': 19, 'Moved to,from': 'China-Deepa Industries LTD', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Process': {'Location': 'Deepa Industries LTD', 'Processes': 'Peeling, Roasting, Salting','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Deepa Industries LTD-Deepa Industries LTD', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Deepa Industries LTD', 'Material': 'Plastic', 'Cancerogen': False,'Problematic':False}
 }
 data_25_proc = {
-	'Harvested': {'Date': '', 'Location': '', 'Product': '','Problematic':False},
-	'Transport1': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Process': {'Location': '', 'Processes': '','Problematic':False},
-	'Transport2': {'Duration': 0, 'Moved to,from': '-', 'Condition': True, 'Stopped': False,'Problematic':False},
-	'Packaging': {'Location': '', 'Material': '', 'Cancerogen': True,'Problematic':False}
+	'Harvested': {'Date': '19.10.2017', 'Location': 'India', 'Product': 'Peanuts','Problematic':False},
+	'Transport1': {'Duration': 15, 'Moved to,from': 'India-Deepa Industries LTD', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Process': {'Location': 'Deepa Industries LTD', 'Processes': 'Peeling, Roasting, Salting','Problematic':False},
+	'Transport2': {'Duration': 1, 'Moved to,from': 'Deepa Industries LTD-Deepa Industries LTD', 'Condition': True, 'Stopped': False,'Problematic':False},
+	'Packaging': {'Location': 'Deepa Industries LTD', 'Material': 'Plastic', 'Cancerogen': True,'Problematic':True}
 }
 
 
